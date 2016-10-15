@@ -1,0 +1,26 @@
+<com.pothiwala.atirek.onlinemediaplayer.MySlidingDrawer xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/slidingDrawerNew"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:allowSingleTap="true"
+    android:clickable="true"
+    android:content="@+id/content"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:rotation="180"
+    android:handle="@+id/handle">
+
+    <View
+        android:id="@+id/handle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/hevoice"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/content"
+        layout="@layout/new_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</com.pothiwala.atirek.onlinemediaplayer.MySlidingDrawer>

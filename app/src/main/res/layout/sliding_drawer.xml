@@ -1,0 +1,53 @@
+<com.pothiwala.atirek.onlinemediaplayer.MySlidingDrawer xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/slidingDrawer"
+    android:layout_width="match_parent"
+    android:layout_height="135dp"
+    android:allowSingleTap="true"
+    android:content="@+id/content"
+    android:handle="@+id/handle">
+
+    <include
+        android:id="@+id/handle"
+        layout="@layout/handle_layout" />
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_player_footer"
+        android:gravity="center">
+
+        <!-- Previous Button -->
+        <!-- Backward Button -->
+        <ImageButton
+            android:id="@+id/btnBackward2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/btn_backward" />
+
+        <!-- Play Button -->
+        <ImageButton
+            android:id="@+id/btnPlay2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/btn_play" />
+
+        <!-- Next Button -->
+        <!-- Forward Button -->
+        <ImageButton
+            android:id="@+id/btnForward2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/btn_forward" />
+
+
+    </LinearLayout>
+
+</com.pothiwala.atirek.onlinemediaplayer.MySlidingDrawer>
